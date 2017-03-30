@@ -18,7 +18,7 @@ class Header extends Component {
              
             
             <h1 className="top-title">Mobile Open Source</h1>
-            <h2 className="project-tagline">Bringing the Native Back to React</h2>
+            <h2 className="project-tagline">Bringing the Native Back to React Native</h2>
         </div>
         </section>
          
