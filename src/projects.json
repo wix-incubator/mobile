@@ -30,7 +30,7 @@
         "description": "Advanced native camera control with pre-defined aspect ratio, crop and more",
         "github": "https://github.com/wix/react-native-camera-kit",
         "AndroidVideoUrl": "",
-        "IOSVideoUrl": "s",
+        "IOSVideoUrl": "https://github.com/wix/mobile/blob/master/src/videos/react-native-camera.mp4?raw=true",
         "IOSDemoAppLink": "",
         "image": "s",
         "poster": "https://github.com/wix/react-native/blob/master/src/img/react-native-camera.jpg?raw=true",

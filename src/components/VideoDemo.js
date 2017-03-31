@@ -52,20 +52,24 @@ class VideoDemo extends Component {
   renderIOSDemo() {
       return (
         <div className="project-video-div" style={(this.state.showVideo === 'ios') ? styles.iphoneMockImg : styles.androidMockImg}>
-            <video playsInline={true} src={(this.state.showVideo === 'ios') ? this.props.IOSVideoUrl : this.props.AndroidVideoUrl} ref="vidRef" className={(this.state.showVideo === 'ios') ? "project-video-iphone" : "project-video-android"} poster={this.props.poster} height="320" width="180"  muted loop={true} >
+            
+            <video playsInline={true} poster={this.props.poster} src={(this.state.showVideo === 'ios') ? this.props.IOSVideoUrl : this.props.AndroidVideoUrl} ref="vidRef" className={(this.state.showVideo === 'ios') ? "project-video-iphone" : "project-video-android"} height="320" width="180"  muted loop={true} >
             {/*<source src={(this.state.showVideo === 'ios') ? this.props.IOSVideoUrl : this.props.AndroidVideoUrl} type="video/mp4"/>*/}
                 Your browser does not support the video tag.
             </video>
+            <img className="project-video-android" style={(this.props.playing == this.props.project) ? {display: 'none'} : {display: 'block', marginTop: -327, width: 180, height: 320}} src={this.props.poster} />
         </div>
       )
   }
   renderAndroidDemo() {
       return (
           <div  className="project-video-div" style={styles.androidMockImg}>
+            <img/>
             <video playsInline={true} ref="vidRef"  className="project-video-android" height="320" width="180"  poster={this.props.poster} muted loop={true} >
             <source src={this.props.AndroidVideoUrl} type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
+            img className="project-video-android" style={(this.props.playing == this.props.project) ? {display: 'none'} : {display: 'block', marginTop: -327, width: 180, height: 320}} src={this.props.poster} />
           </div>
       )
   }

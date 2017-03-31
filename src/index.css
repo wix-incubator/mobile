@@ -38,7 +38,6 @@ header {
 	background-color: rgb(25,48,62);
 	height: 20%;
     background-image: url('./img/space.jpeg');
-	background-attachment: fixed;
     width: 100%;
     
 }
