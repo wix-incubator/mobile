@@ -57,7 +57,7 @@ class VideoDemo extends Component {
             {/*<source src={(this.state.showVideo === 'ios') ? this.props.IOSVideoUrl : this.props.AndroidVideoUrl} type="video/mp4"/>*/}
                 Your browser does not support the video tag.
             </video>
-            <img className="project-video-android" style={(this.props.playing == this.props.project) ? {display: 'none'} : {display: 'block', marginTop: -327, width: 180, height: 320}} src={this.props.poster} />
+            <img className="project-video-android" style={((this.props.playing == this.props.project) || (this.state.mobile)) ? {display: 'none'} : {display: 'block', marginTop: -327, width: 180, height: 320}} src={this.props.poster} />
         </div>
       )
   }
@@ -69,7 +69,7 @@ class VideoDemo extends Component {
             <source src={this.props.AndroidVideoUrl} type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
-            img className="project-video-android" style={(this.props.playing == this.props.project) ? {display: 'none'} : {display: 'block', marginTop: -327, width: 180, height: 320}} src={this.props.poster} />
+            <img className="project-video-android" style={((this.props.playing == this.props.project) || (this.state.mobile)) ? {display: 'none'} : {display: 'block', marginTop: -327, width: 180, height: 320}} src={this.props.poster} />
           </div>
       )
   }
