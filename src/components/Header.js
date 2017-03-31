@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import dash from '../img/dash.png'
 import logo from '../img/logo.png'
+import space from '../img/space-min.jpg'
 
 class Header extends Component {
   constructor(props){
@@ -10,7 +11,7 @@ class Header extends Component {
   render() {
     return (
         <div>
-       <section className="wix-page-header">
+       <section className="wix-page-header" style={{backgroundImage: "url(" + space + ")"}}>
            <header>
                 <img src={logo} className="main-logo"/>
             </header>

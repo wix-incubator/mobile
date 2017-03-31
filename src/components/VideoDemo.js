@@ -20,10 +20,9 @@ class VideoDemo extends Component {
     }
   }
   _handleScroll(){
-    console.log('scrollhandle')
     let topPosition = ReactDOM.findDOMNode(this.refs.vidRef).getBoundingClientRect().top
       if ( topPosition < 400 && topPosition > -100) {
-            this.playVideo()
+        this.playVideo()
       } else {
           this.pauseVideo()
       }
@@ -77,7 +76,7 @@ class VideoDemo extends Component {
     return (
         <div className="project-media-container">
             {(this.props.IOSVideoUrl) ? this.renderIOSDemo() :this.renderAndroidDemo()}
-            {}
+            
             {(this.props.AndroidVideoUrl && this.props.IOSVideoUrl)  && 
             <div className="project-icons-container">
                  <img className="apple-icon" onClick={() => this.changeVideo('ios')} style={(this.state.showVideo === 'android') ? {opacity: 0.4} : {opacity: 1}} src={iphoneIcon} />  

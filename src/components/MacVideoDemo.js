@@ -16,7 +16,6 @@ class MacVideoDemo extends Component {
     }
   }
   _handleScroll(){
-    console.log('scrollhandle')
     let topPosition = ReactDOM.findDOMNode(this.refs.vidRef).getBoundingClientRect().top
       if ( topPosition < 400 && topPosition > -100) {
             this.playVideo()
